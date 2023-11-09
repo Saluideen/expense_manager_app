@@ -1,0 +1,229 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-09 15:36:17.498743",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "branch",
+  "column_break_5fmek",
+  "department",
+  "column_break_w6dc4",
+  "division",
+  "section_break_yfcxh",
+  "user",
+  "column_break_9nqg4",
+  "role",
+  "section_break_fcad1",
+  "expense_type",
+  "column_break_t4dnt",
+  "distance",
+  "column_break_83gkn",
+  "rate",
+  "section_break_ht5nf",
+  "amount",
+  "column_break_img5t",
+  "spent_at",
+  "column_break_zqqzo",
+  "city",
+  "section_break_dweew",
+  "from_date",
+  "column_break_jcegv",
+  "to_date",
+  "column_break_9n5ki",
+  "category",
+  "section_break_9vuuu",
+  "description",
+  "column_break_zcet5",
+  "invoice_no",
+  "section_break_xiile",
+  "attachments"
+ ],
+ "fields": [
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "column_break_5fmek",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "column_break_w6dc4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "division",
+   "fieldtype": "Link",
+   "label": "Division",
+   "options": "Division"
+  },
+  {
+   "fieldname": "section_break_yfcxh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "label": "User",
+   "options": "User"
+  },
+  {
+   "fieldname": "column_break_9nqg4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "role",
+   "fieldtype": "Link",
+   "label": "Role",
+   "options": "Expense Role"
+  },
+  {
+   "fieldname": "section_break_fcad1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "expense_type",
+   "fieldtype": "Select",
+   "label": "Expense Type",
+   "options": "\nCASH\nMILEAGE"
+  },
+  {
+   "fieldname": "column_break_t4dnt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "distance",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Distance"
+  },
+  {
+   "fieldname": "column_break_83gkn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Rate",
+   "options": "\n6\n12\n4.5\n10"
+  },
+  {
+   "fieldname": "section_break_ht5nf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "column_break_img5t",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "spent_at",
+   "fieldtype": "Data",
+   "label": "Spent At"
+  },
+  {
+   "fieldname": "column_break_zqqzo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "section_break_dweew",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "column_break_jcegv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Data",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "column_break_9n5ki",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Expense Category"
+  },
+  {
+   "fieldname": "section_break_9vuuu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_zcet5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "invoice_no",
+   "fieldtype": "Data",
+   "label": "Invoice No"
+  },
+  {
+   "fieldname": "section_break_xiile",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Attach",
+   "label": "Attachments"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-09 15:52:19.787637",
+ "modified_by": "Administrator",
+ "module": "Expense Manager App",
+ "name": "Expense",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
