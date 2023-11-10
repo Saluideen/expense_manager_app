@@ -3,7 +3,9 @@
 
 frappe.ui.form.on('Expense', {
 	refresh: function(frm) {
-		// show hidden fields
+		// Action Button
+		frm.events.action_button(frm)
+
 
 	},
 	expense_type:function(frm){
@@ -33,5 +35,7 @@ frappe.ui.form.on('Expense', {
 			frm.refresh_field("amount")
 		}
 
-	}
+	},
+	/////////////////////////////////////CUSTOM FUNCTIONS///////////////////////////////////////////////////
+	
 });

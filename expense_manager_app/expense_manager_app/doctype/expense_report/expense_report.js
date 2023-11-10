@@ -3,6 +3,7 @@
 
 frappe.ui.form.on('Expense Report', {
 	refresh: function(frm) {
+		console.log("hello");
 	// set description
 	frm.events.set_description(frm)
 
@@ -10,10 +11,26 @@ frappe.ui.form.on('Expense Report', {
 
 	//custom functions
 	set_description:function(frm){
-		let description
+		let formattedDate = getCurrentFormattedDate();
+		let description="Expense Statement For "+formattedDate
+		frm.doc.description=description
+		frm.refresh_field("description")
 		
 	}
 });
+function getCurrentFormattedDate() {
+    const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    
+    const currentDate = new Date();
+    const dayOfWeek = currentDate.toLocaleDateString('en-US', { weekday: 'short' });
+    const month = months[currentDate.getMonth()];
+    const day = currentDate.getDate();
+    const year = currentDate.getFullYear();
+
+    const formattedDate = `${dayOfWeek} ${month} ${day} ${year}`;
+
+    return formattedDate;
+}
 frappe.ui.form.on("Expense list", {
 	expense_doc: function (frm, cdt, cdn) {
 

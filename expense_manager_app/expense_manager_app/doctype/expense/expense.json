@@ -39,7 +39,8 @@
   "column_break_zcet5",
   "invoice_no",
   "section_break_xiile",
-  "attachments"
+  "attachments",
+  "status"
  ],
  "fields": [
   {
@@ -201,11 +202,18 @@
    "fieldname": "attachments",
    "fieldtype": "Attach",
    "label": "Attachments"
+  },
+  {
+   "default": "Draft",
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Status"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-10 10:23:26.910282",
+ "modified": "2023-11-10 10:57:28.474928",
  "modified_by": "Administrator",
  "module": "Expense Manager App",
  "name": "Expense",
