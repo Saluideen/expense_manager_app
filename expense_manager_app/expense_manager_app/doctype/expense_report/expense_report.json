@@ -13,11 +13,14 @@
   "column_break_w6dc4",
   "division",
   "section_break_yfcxh",
-  "user",
-  "column_break_9nqg4",
   "role",
-  "section_break_fcad1",
+  "user",
+  "column_break_e4cta",
+  "description",
+  "column_break_b8a4l",
   "total",
+  "column_break_9nqg4",
+  "section_break_fcad1",
   "section_break_yv1zu",
   "expense"
  ],
@@ -55,7 +58,7 @@
   {
    "fieldname": "user",
    "fieldtype": "Link",
-   "label": "User",
+   "label": "Initiated By",
    "options": "User"
   },
   {
@@ -65,6 +68,7 @@
   {
    "fieldname": "role",
    "fieldtype": "Link",
+   "hidden": 1,
    "label": "Role",
    "options": "Expense Role"
   },
@@ -81,16 +85,29 @@
   {
    "fieldname": "total",
    "fieldtype": "Float",
-   "label": "Total"
+   "label": "Amount"
   },
   {
    "fieldname": "section_break_yv1zu",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_e4cta",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_b8a4l",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-11-09 16:21:39.908166",
+ "modified": "2023-11-10 10:26:01.871823",
  "modified_by": "Administrator",
  "module": "Expense Manager App",
  "name": "Expense Report",

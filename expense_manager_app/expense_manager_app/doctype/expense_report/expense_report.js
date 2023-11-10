@@ -2,13 +2,17 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Expense Report', {
-	// refresh: function(frm) {
-	// 	frm.doc.expense.forEach(function (row) {
-	// 		total += row.amount;
-	// 	  });
-	// console.log("total",total);
+	refresh: function(frm) {
+	// set description
+	frm.events.set_description(frm)
 
-	// }
+	},
+
+	//custom functions
+	set_description:function(frm){
+		let description
+		
+	}
 });
 frappe.ui.form.on("Expense list", {
 	expense_doc: function (frm, cdt, cdn) {
